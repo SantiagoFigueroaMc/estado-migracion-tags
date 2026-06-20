@@ -1,0 +1,56 @@
+/* Contenedor opcional para asegurar alineación */
+.grupo-select {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos principales del selector utilizando tus variables */
+select {
+    width: 100%;
+    padding: 10px 40px 10px 12px; /* Espacio extra a la derecha para la flecha */
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: var(--text); /* Se adapta automáticamente al modo claro/oscuro */
+    background-color: var(--bg); /* Usa el fondo del tema actual */
+    border: 1px solid var(--border); /* Usa el borde del tema actual */
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    /* Elimina la flecha nativa del navegador */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Flecha personalizada con SVG dinámico */
+    /* Nota: Se usa currentColor para que la flecha tome el color exacto de var(--text) */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    
+    /* Transiciones suaves */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estado al hacer foco (Focus) */
+select:focus {
+    outline: none;
+    border-color: var(--primary); /* Usa el color primario de tu marca (azul claro/oscuro) */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Sombra suave basada en var(--clr-primary-light) */
+}
+
+/* Estado deshabilitado (Disabled) */
+select:disabled {
+    background-color: var(--bg-surface); /* Usa el fondo gris claro o superficie oscura */
+    color: var(--text-muted); /* Usa el texto atenuado del tema actual */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Estilo para las opciones del menú desplegable */
+select option {
+    padding: 10px;
+    background-color: var(--bg); /* Asegura que el fondo del menú combine con el tema */
+    color: var(--text);
+}

@@ -1,0 +1,10 @@
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
