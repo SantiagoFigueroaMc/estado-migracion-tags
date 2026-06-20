@@ -3,7 +3,7 @@ function createHeader(){
     myHeader.innerHTML = `
     <nav>
     <ul>
-    <li><a href="/">Home</a></li>
+    <li><a href="./index.html">Home</a></li>
     <li><a href="./comparar_fechas.html">Comparar fechas</a></li>
     <li><a href="./gantt.html">Gantt</a></li>
     </ul>
