@@ -21,9 +21,9 @@ Cuando te pida crear una nueva interfaz o archivo HTML, debes estructurarlo sigu
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Título de la Página]</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <script src="/scripts/theme.js"></script>
-  <script src="/scripts/navigation.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+  <script src="navigation.js"></script>
 </head>
 <body>
   <main>
