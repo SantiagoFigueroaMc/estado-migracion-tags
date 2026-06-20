@@ -4,8 +4,8 @@ function createHeader(){
     <nav>
     <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/pages/comparar_fechas.html">Comparar fechas</a></li>
-    <li><a href="/pages/gantt.html">Gantt</a></li>
+    <li><a href="./comparar_fechas.html">Comparar fechas</a></li>
+    <li><a href="./gantt.html">Gantt</a></li>
     </ul>
     </nav>
     `;
