@@ -6,6 +6,7 @@ function createHeader(){
     <li><a href="./index.html">Home</a></li>
     <li><a href="./comparar_fechas.html">Comparar fechas</a></li>
     <li><a href="./gantt.html">Gantt</a></li>
+    <li><a href="./configuraciones.html">Configuraciones</a></li>
     </ul>
     </nav>
     `;
